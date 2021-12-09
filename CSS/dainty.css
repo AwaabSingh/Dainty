@@ -1,0 +1,384 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  /* overflow:screen; */
+}
+nav{
+  position: sticky !important;
+  top: 0;
+  z-index: 2;
+}
+nav .navbar{
+  display: flex;
+  align-items: center; 
+  background: #f5a5a5;
+}
+#logo{
+  line-height: 1.5rem;
+  color: #000000;
+  letter-spacing: 0.1rem;
+  text-shadow: 0 0 5px #ffffff;
+  font-weight: bold;
+}
+#logo .dainty{
+  font-family: amberllee;
+  font-size: 25px;
+}
+#logo .conf{
+  font-family: amberllee;
+}
+.navbar-nav a{
+  color: #000000 !important;
+  font-size: 20px;
+  margin-left: 10px;
+  font-family: calibri;
+}
+.navbar-nav a:hover{
+  background: #2c2c2cc1;
+  color: #ffffff !important;
+}
+#home{
+    /* border: 2px solid rgb(230, 255, 0); */
+}
+#img1{
+  background: url("../IMG/pexels-daria-vasileva-552535.jpg");
+  height: 70vh;
+  background-size:cover;
+  background-position: center;
+}
+#img2{
+  background: url("../IMG/pexels-daria-shevtsova-709841.jpg");
+  height: 70vh;
+  background-size:cover;
+  background-position: center;
+}
+#img3{
+  background: url("../IMG/pexels-joaquin-egea-88917.jpg");
+  height: 70vh;
+  background-size:cover;
+  background-position: center;
+}
+#features{
+  padding-top: 35px;
+  background:#fff5c5 ;
+}
+.feats{
+  color: #000000;
+  text-align: center;
+  font-family: amberllee;
+  margin-top: 25px;
+}
+.feature-text{
+  text-shadow: 0 0 3px black;
+  font-family: calibri;
+  background: #ffc400;
+  color: white;
+  display:inline-block;
+  padding: .5rem 1.5rem;
+  clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
+}
+.thumbnail .container-img{
+  height: 50vh;
+  /* width: 400px; */
+  margin:20px 0px;
+  background-size: cover;
+  border:2px solid gray;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  box-shadow: 0 0 10px #eeff00;
+  transition: all 1s ease;
+  padding: 20px;
+}
+.img1,.img2,.img3 > .pry-word{
+  color: #ffffff;
+}
+.fas{
+  margin-top: 100px;
+  font-size: 50px;
+  color: #ffc400;
+}
+.pry-word{
+  margin-top: 30px;
+}
+.img1{
+  background:linear-gradient(to left, #000000b4 ,#1d1d1dcb) ,url("../IMG/pexels-daria-shevtsova-709841.jpg");
+}
+.img2{
+  background:linear-gradient(to left, #000000b4 ,#1d1d1dcb) , url("../IMG/delivery.png");
+}
+.img3{
+  background:linear-gradient(to left, #000000b4 ,#1d1d1dcb) , url("../IMG/96.jpg");
+}
+.thumbnail .container-img:hover{
+  transform: scale(1.05);
+}
+.product-reg{
+  margin: 30px;
+  /* padding: 50px; */
+}
+#cake-img1{
+  background: url("../IMG/Screenshot_20211120-211004.png");
+}
+#cake-img2{
+  background: url("../IMG/Screenshot_20211120-210949.png");
+}
+#cake-img3{
+  background: url("../IMG/Screenshot_20211120-211101.png");
+}
+#cake-img4{
+  background: url("../IMG/Screenshot_20211120-211044.png");
+}
+#cake-img5{
+  background: url("../IMG/IMG-20211122-WA0003.jpg");
+}
+#cake-img6{
+  background: url("../IMG/IMG-20211122-WA0005.jpg");
+}
+#cake-img7{
+  background: url("../IMG/Screenshot_20211120-211016.png");
+}
+#chops-img1{
+  background: url("../IMG/chop_1.png");
+}
+#chops-img2{
+  background: url("../IMG/chop_2.png");
+}
+#chops-img3{
+  background: url("../IMG/chop_3.png");
+}
+#chops-img4{
+  background: url("../IMG/chop_6.png");
+}
+#pas-img1{
+  background: url("../IMG/pas_1.jpg");
+}
+#pas-img2{
+  background: url("../IMG/pas_2.jpg");
+}
+#pas-img3{
+  background: url("../IMG/pas_3.jpg");
+}
+#pas-img4{
+  background: url("../IMG/pas_4.jpg");
+}
+
+#cake-img1,#cake-img2,#cake-img3,#cake-img4,#cake-img5,#cake-img6,#cake-img7,#chops-img1,#chops-img2,#chops-img3,#chops-img4,
+#pas-img1,#pas-img2,#pas-img3,#pas-img4{
+  height: 70vh;
+  background-size: cover;
+  background-position: center;
+  /* margin: 50px;   */
+}
+.products-cover{
+  display: flex;
+  /* flex-wrap: wrap;flex-direction: column; */
+  padding:10px 20px;
+  text-align: center;
+  background: #beb39e;
+}
+.cakes-reg,.small-chops,.pastries{
+  flex: 1;
+  margin: 20px;
+}
+#caro{
+  border-radius: 40px;
+  box-shadow: 0 0 10px black;
+  
+}
+hr{
+  width: 30%;
+  position: relative;
+  left: 35%;
+  background:#ffffff !important;
+}
+.cakes-words,.chops-words,.pastries-words > h4{
+  margin: 5px 0;
+}
+/* <div class="d-block w-100" id="cake-img1"></div> */
+.chops-words>.feature-text,.cakes-words>.feature-text,.pastries-words>.feature-text{
+  font-size:35px;
+}
+.wpsau{
+  text-align:center;
+  font-size: 22px;
+}
+.testimonial-pry > hr{
+  width: 30%;
+  position: relative;
+  left: 35%;
+  background:black !important;
+}
+.card-parent{
+  background:linear-gradient(to left, #000000c2, #000000e0), url("../IMG/pexels-daria-shevtsova-709841.jpg") ;
+  background-position: center;
+  background-size: cover;
+  padding: 25px;
+  display:flex;
+  /* flex-wrap: wrap; */
+}
+.card{
+  background: #ffffff;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+}
+.q{
+  font-size: 35px;
+  color: red;
+  font-family: amberllee;
+  margin: 0;
+  padding: 0;
+  /* line-height:5.5rem; */
+}
+.b-img{
+  background: url("../IMG/bike7.jpg");
+  height: 100px;
+  width: 100px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  border: 3px solid yellow;}
+.profile{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.contact-sec{
+  margin-top:20px ;
+}
+section.contact{
+  padding: 20px;
+  /* display: flex; */
+  /* justify-content: space-between; */
+  color: #fff;
+}
+.FAs a span{
+  margin-right: 25px;
+  font-size: 25px;
+  /* cursor: pointer; */
+}
+.left-path,.right-path{
+  flex: 1;
+}
+.left-path{
+  color: black;
+}
+/* .left-path img{
+  margin-top: 25px;
+  box-shadow: 0 0 20px white;
+} */
+.right-path{
+  /* background: #ffc400; */
+  background: #ffc400;
+  padding: 15px;
+  box-shadow: 0 0 10px black;
+  /* width: 700px; */
+  margin-top: 20px;
+}
+.right-path label{
+  font-size: 22px;
+  color: #000;
+  font-weight: 400;
+}
+.right-path input{
+  width: 100%;
+  border: none;
+  height: 30px;
+  padding: 5px 10px;
+  /* font-size: 20px; */
+  /* background: #bbb9b9; */
+}
+.right-path textarea{
+  width: 100%;
+}
+button#btn{
+  background: #000;
+  color: #fff;
+  border:none;
+  font-size: 20px;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:1024px ){
+  .thumbnail .container-img{
+    width: 300px;
+  }
+}
+@media screen and (max-width:768px ){
+ .navbar-nav a{
+  border-bottom: 1px solid rgb(89, 88, 88);
+  line-height: 1rem;
+ }
+ .navbar-nav a:last-child{
+   border: 0;
+ }
+ .products-cover{
+   flex-direction: column;
+ }
+ .card-parent{
+   flex-wrap: wrap;
+   /* flex-direction: column; */
+ }
+}
+@media screen and (max-width:425px ){
+  #img1,#img2,#img3{
+    height: 40vh;
+  }
+  #cake-img1,#cake-img2,#cake-img3,#cake-img4,#cake-img5,#cake-img6,#cake-img7,#chops-img1,#chops-img2,#chops-img3,#chops-img4,
+  #pas-img1,#pas-img2,#pas-img3,#pas-img4{
+    height: 40vh;
+    border-radius: 10px;
+  }
+  .chops-words>.feature-text,.cakes-words>.feature-text,.pastries-words>.feature-text{
+    font-size:22px;
+  }
+  section.contact{
+    flex-direction: column;
+  }
+  .left-path{
+    text-align: center;
+    margin-bottom: 20px;
+    line-height:1.5rem
+  }
+}
